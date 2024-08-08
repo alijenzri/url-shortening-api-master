@@ -1,0 +1,110 @@
+/* | IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* | CSS RESET  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* | VARIABLES */
+:root {
+    /* | COLOR  */
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Ver-Dark-Violet: hsl(260, 8%, 14%);
+    /* | FONT */
+    --body-fonts: 500 18px 'Poppins';
+    --nav-brand-fonts: 700 25px 'Poppins';
+    --nav-item-fonts: 700 14px 'Poppins';
+}
+
+/* | GENERAL STYLES */
+body {
+    font: var(--body-fonts) !important;
+}
+
+/* | NAVBAR STYLES */
+.navbar-brand {
+    font: var(--nav-brand-fonts) !important;
+    color: var(--Ver-Dark-Violet) !important;
+}
+
+.nav-item a,
+.btn {
+    font: var(--nav-item-fonts) !important;
+    color: var(--Gray) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-singUp {
+    background-color: var(--Cyan) !important;
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-singUp:hover {
+    background-color: white !important;
+    color: var(--Cyan) !important;
+}
+
+.btn-login:hover {
+    background-color: var(--Ver-Dark-Violet) !important;
+    color: white !important;
+}
+
+/* | MEDIA QUERY */
+@media screen and (max-width: 991px) {
+    
+    :root {
+        /* | FONT */
+        --nav-brand-fonts: 700 30px 'Poppins';
+        --nav-item-fonts: 700 18px 'Poppins';
+    }
+
+    .navbar-collapse {
+        background-color: var(--Dark-Violet); 
+        padding: 1.5rem 3rem; 
+        margin-top: 0.5rem;
+        border-radius: 8px; 
+    }
+    
+    .navbar-collapse .nav-link, 
+    .navbar-collapse .btn {
+        color: white !important; 
+        padding: 0.8rem; 
+        margin-bottom: 0.5rem; 
+        text-align: center; 
+        width: 100%; 
+    }
+    
+    .navbar-collapse form {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar-collapse .nav-item:last-child {
+        margin-bottom: 0.5rem; 
+    }
+
+    .navbar-collapse form::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px; 
+        background-color: var(--Gray); 
+        margin-bottom: 1rem; 
+    }
+}
