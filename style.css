@@ -28,6 +28,7 @@ img {
     --body-fonts: 500 18px 'Poppins';
     --nav-brand-fonts: 700 25px 'Poppins';
     --nav-item-fonts: 700 14px 'Poppins';
+    --hero-container-p-fonts: 700 16px 'Poppins';
 }
 
 /* | GENERAL STYLES */
@@ -64,9 +65,22 @@ body {
     color: white !important;
 }
 
+/* | HERO CONTAINER */
+.hero-container h1 {
+    font-weight: 700;
+    line-height: 1.2; 
+    color: var(--Ver-Dark-Violet) !important;
+    font-size: clamp(2rem, 6vw, 4rem) !important; 
+}
+
+.hero-container p {
+    font: var(--hero-container-p-fonts);
+    color: var(--Gray);
+}
+
 /* | MEDIA QUERY */
 @media screen and (max-width: 991px) {
-    
+
     :root {
         /* | FONT */
         --nav-brand-fonts: 700 30px 'Poppins';
@@ -74,21 +88,21 @@ body {
     }
 
     .navbar-collapse {
-        background-color: var(--Dark-Violet); 
-        padding: 1.5rem 3rem; 
+        background-color: var(--Dark-Violet);
+        padding: 1.5rem 3rem;
         margin-top: 0.5rem;
-        border-radius: 8px; 
+        border-radius: 8px;
     }
-    
-    .navbar-collapse .nav-link, 
+
+    .navbar-collapse .nav-link,
     .navbar-collapse .btn {
-        color: white !important; 
-        padding: 0.8rem; 
-        margin-bottom: 0.5rem; 
-        text-align: center; 
-        width: 100%; 
+        color: white !important;
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        width: 100%;
     }
-    
+
     .navbar-collapse form {
         justify-content: center;
         align-items: center;
@@ -96,15 +110,28 @@ body {
     }
 
     .navbar-collapse .nav-item:last-child {
-        margin-bottom: 0.5rem; 
+        margin-bottom: 0.5rem;
     }
 
     .navbar-collapse form::before {
         content: "";
         display: block;
         width: 100%;
-        height: 1px; 
-        background-color: var(--Gray); 
-        margin-bottom: 1rem; 
+        height: 1px;
+        background-color: var(--Gray);
+        margin-bottom: 1rem;
+    }
+
+    .hero-container h1 {
+        font-weight: 700;
+        line-height: 1.2; 
+        color: var(--Ver-Dark-Violet) !important;
+        font-size: clamp(1rem, 4.5vw, 3rem) !important; 
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-container h1 {
+        font-size: 2.2rem !important;
     }
 }
