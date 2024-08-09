@@ -52,12 +52,15 @@ body {
 .btn-singUp {
     background-color: var(--Cyan) !important;
     color: white !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-singUp:hover {
-    background-color: white !important;
-    color: var(--Cyan) !important;
+    background-color: var(--Cyan);
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
 }
 
 .btn-login:hover {
@@ -68,15 +71,54 @@ body {
 /* | HERO CONTAINER */
 .hero-container h1 {
     font-weight: 700;
-    line-height: 1.2; 
+    line-height: 1.2;
     color: var(--Ver-Dark-Violet) !important;
-    font-size: clamp(2rem, 6vw, 4rem) !important; 
+    font-size: clamp(2rem, 6vw, 4rem) !important;
 }
 
 .hero-container p {
     font: var(--hero-container-p-fonts);
     color: var(--Gray);
 }
+
+/* | shorten-link-section */
+.shortened-link-output {
+    background: var(--Gray);
+}
+
+.link-input-row {
+    background-image: url('images/bg-boost-desktop.svg');
+    background-color: var(--Dark-Violet);
+    border-radius: 10px;
+}
+
+.shorten-link-section .row {
+    min-height: 100px;
+}
+
+#shortenLinkSection {
+    width: 100%;
+}
+
+.shorten-link-section .btn-singUp {
+    width: 100%;
+}
+
+.shortened-link-output {
+    border-radius: 5px;
+    background-color: white;
+}
+
+.shortened-link-output p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.btn-copy {
+    width: 100%
+}
+
+
 
 /* | MEDIA QUERY */
 @media screen and (max-width: 991px) {
@@ -124,9 +166,9 @@ body {
 
     .hero-container h1 {
         font-weight: 700;
-        line-height: 1.2; 
+        line-height: 1.2;
         color: var(--Ver-Dark-Violet) !important;
-        font-size: clamp(1rem, 4.5vw, 3rem) !important; 
+        font-size: clamp(1rem, 4.5vw, 3rem) !important;
     }
 }
 
