@@ -72,18 +72,20 @@ body {
 .hero-container h1 {
     font-weight: 700;
     line-height: 1.2;
-    color: var(--Ver-Dark-Violet) !important;
+    color: var(--Dark-Violet) !important;
     font-size: clamp(2rem, 6vw, 4rem) !important;
 }
 
-.hero-container p {
+.hero-container p,
+.statistics-section p {
     font: var(--hero-container-p-fonts);
     color: var(--Gray);
 }
 
 /* | shorten-link-section */
-.shortened-link-output {
-    background: var(--Gray);
+.bg-gray {
+    margin-top: 150px;
+    padding-bottom: 130px;
 }
 
 .link-input-row {
@@ -98,6 +100,7 @@ body {
 
 #shortenLinkSection {
     width: 100%;
+    transform: translateY(-80px);
 }
 
 .shorten-link-section .btn-singUp {
@@ -118,7 +121,53 @@ body {
     width: 100%
 }
 
+.hortened-url {
+    color: var(--Cyan);
+}
 
+/* | STATISTICS SECTION */
+.statistics-section {
+    flex-direction: column;
+}
+
+.statistics-title ,
+.statistics-card .card h5 {
+    font-weight: 700;
+    color: var(--Dark-Violet);
+}
+
+.statistics-card {
+    margin-top: 60px;
+}
+
+.statistics-card .card {
+    border: none;
+}
+
+.brand-recognition-img-container {
+    background-color: var(--Dark-Violet);
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    transform: translateY(-65px);
+    position:absolute;
+}
+
+.statistics-card-img {
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+#detailed-records {
+    margin-top: 80px;
+}
+
+#fully-customizable {
+    margin-top: 160px;
+}
 
 /* | MEDIA QUERY */
 @media screen and (max-width: 991px) {

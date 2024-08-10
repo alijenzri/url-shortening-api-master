@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <header>
     <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
@@ -42,18 +41,16 @@
     </nav>
   </header>
   <main class="my-5">
-
     <div class="container my-5">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-6 text-center text-md-start">
           <div class="hero-container">
             <h1 class="fs-1">More than just <br> shorter links</h1>
-            <p class="mb-4">
-              Build your brand’s recognition and get detailed <br> insights
-              on how your links are performing.
-            </p>
+            <p class="mb-4">Build your brand’s recognition and get detailed <br> insights on how your links are
+              performing.</p>
             <a href="#shortenLinkSection">
-              <button class="btn btn-singUp rounded-pill px-5 py-3">Get Started</button></a>
+              <button class="btn btn-singUp rounded-pill px-5 py-3">Get Started</button>
+            </a>
           </div>
         </div>
         <div class="col-md-6 text-center">
@@ -61,59 +58,95 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid bg-gray bg-secondary-subtle">
+      <div class="container shorten-link-section pb-2" id="shortenLinkSection">
+        <div class="row link-input-row justify-content-center p-5">
+          <form action="#" class="d-flex align-items-center justify-content-center w-100">
+            <div class="col-md-10 me-3">
+              <input type="text" id="link-input" placeholder="Shorten a link here..." class="form-control p-3 ps-4" />
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-singUp rounded py-3 px-4" type="submit">Get Started</button>
+            </div>
+          </form>
+        </div>
+        <div class="shortened-link-section mt-4">
+          <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-2">
+            <p class="original-link">https://www.frontendmentor.io</p>
+            <div class="shortened-link d-flex align-items-center">
+              <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
+              <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
+            </div>
+          </div>
+          <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-2">
+            <p class="original-link">https://www.frontendmentor.io</p>
+            <div class="shortened-link d-flex align-items-center">
+              <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
+              <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
+            </div>
+          </div>
+          <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-2">
+            <p class="original-link">https://www.frontendmentor.io</p>
+            <div class="shortened-link d-flex align-items-center">
+              <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
+              <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
+            </div>
+          </div>
 
-    <div class="container-fluid bg-secondary-subtle"><div class="container  shorten-link-section #shortenLinkSection">
-      <div class="row link-input-row justify-content-center p-5">
-        <form action="#" class="d-flex align-items-center justify-content-center w-100">
-          <div class="col-md-10 me-3">
-            <input type="text" id="link-input" placeholder="Shorten a link here..." class="form-control p-3 ps-4" />
-          </div>
-          <div class="col-md-2">
-            <button class="btn btn-singUp rounded py-3 px-4" type="submit">Get Started</button>
-          </div>
-        </form>
+        </div>
       </div>
 
-      <div class="shortened-link-section mt-3">
-        <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-5 m-2">
-          <p class="original-link">https://www.frontendmentor.io</p>
-          <div class="shortened-link d-flex align-items-center justify-content-between">
-            <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
-            <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
+      <div class="statistics-section contaienr d-flex align-items-center justify-content-center mt-5">
+        <h1 class="statistics-title mb-3">Advanced Statistics</h1>
+        <p class="text-center lh-lg">
+          Track how your links are performing across the web with <br> our
+          advanced statistics dashboard.
+        </p>
+        <div class="statistics-card container">
+          <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card p-4">
+                <div class="brand-recognition-img-container">
+                  <img src="images/icon-brand-recognition.svg" class="statistics-card-img img-fluid">
+                </div>
+                <div class="card-body mt-4">
+                  <h5 class="card-title mb-3">Brand Recognition</h5>
+                  <p class="card-text">Boost your brand recognition with each click. Generic links don’t
+                    mean a thing. Branded links help instil confidence in your content</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" id="detailed-records">
+              <div class="card p-4">
+                <div class="brand-recognition-img-container">
+                  <img src="images/icon-detailed-records.svg" class="statistics-card-img img-fluid">
+                </div>
+                <div class="card-body mt-4">
+                  <h5 class="card-title mb-3">Detailed Records</h5>
+                  <p class="card-text">Gain insights into who is clicking your links. Knowing when and where
+                    people engage with your content helps inform better decisions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" id="fully-customizable">
+              <div class="card p-4">
+                <div class="brand-recognition-img-container">
+                  <img src="images/icon-fully-customizable.svg" class="statistics-card-img img-fluid">
+                </div>
+                <div class="card-body mt-4">
+                  <h5 class="card-title mb-3">Fully Customizable</h5>
+                  <p class="card-text">Improve brand awareness and content discoverability through customizable
+                    links, supercharging audience engagement.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-5 my-2">
-          <p class="original-link">https://www.frontendmentor.io</p>
-          <div class="shortened-link d-flex align-items-center justify-content-between">
-            <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
-            <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
-          </div>
-        </div>
-        <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 my-2">
-          <p class="original-link">https://www.frontendmentor.io</p>
-          <div class="shortened-link d-flex align-items-center justify-content-between">
-            <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
-            <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
-          </div>
-        </div>
-        <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 my-2">
-          <p class="original-link">https://www.frontendmentor.io</p>
-          <div class="shortened-link d-flex align-items-center justify-content-between">
-            <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
-            <button class="btn btn-singUp rounded py-2 px-4">Copy</button>
-          </div>
-        </div>
-      </div>
-    </div></div>
-    
+
   </main>
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  </div>
 </body>
 
 </html>
