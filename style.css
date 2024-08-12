@@ -84,8 +84,8 @@ body {
 
 /* | shorten-link-section */
 .bg-gray {
-    margin-top: 150px;
-    padding-bottom: 130px;
+    margin-top: 180px;
+    padding-bottom: 90px;
 }
 
 .link-input-row {
@@ -136,10 +136,6 @@ body {
     color: var(--Dark-Violet);
 }
 
-.statistics-card {
-    margin-top: 60px;
-}
-
 .statistics-card .card {
     border: none;
 }
@@ -167,6 +163,20 @@ body {
 
 #fully-customizable {
     margin-top: 160px;
+}
+
+/* LINK BOOST SECTION */
+.link-boost-section {
+    flex-direction: column;
+    background-color: var(--Dark-Violet);
+    background-image: url('images/bg-boost-desktop.svg');
+    padding: 60px;
+    background-size: cover;
+}
+
+.link-boost-section h1 {
+    color: white;
+    font-weight: 700;
 }
 
 /* | MEDIA QUERY */
