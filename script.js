@@ -66,8 +66,8 @@ document.querySelector('#btn-shorten')
                     <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-3" data-link-input="${originalLinkInput}">
                         <p class="original-link">${originalLinkInput}</p>
                         <div class="line-separator mx-3"></div>
-                        <div class="hortened-link d-flex align-items-center">
-                            <p class="shortened-url me-3">${shortenedLink}</p>
+                        <div class="shortened-link d-flex align-items-center">
+                            <p class="hortened-url me-3">${shortenedLink}</p>
                             <button class="btn btn-singUp btn-copy rounded py-2 px-4" data-link="${shortenedLink}">Copy</button>
                         </div>
                     </div>
