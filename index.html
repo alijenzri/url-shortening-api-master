@@ -64,9 +64,13 @@
     <div class="container-fluid bg-gray bg-secondary-subtle" id="linkSection">
       <div class="container shorten-link-section pb-2" id="shortenLinkSection">
         <div class="row link-input-row justify-content-center">
-          <form action="#" class="d-flex align-items-center justify-content-center w-100">
+          <form action="#" class="d-flex align-items-center justify-content-center w-100 needs-validation" novalidate>
             <div class="col-md-9 me-3 input-col">
-              <input type="text" id="link-input" placeholder="Shorten a link here..." class="form-control p-3 ps-4" />
+              <input type="text" id="link-input" placeholder="Shorten a link here..." class="form-control p-3 ps-4"
+                required />
+              <div class="invalid-feedback">
+                This field cannot be empty.
+              </div>
             </div>
             <div class="col-md-3 btn-col">
               <button class="btn btn-singUp rounded py-3 px-4" type="submit" id="btn-shorten">Shorten it!</button>
@@ -74,31 +78,14 @@
           </form>
         </div>
         <div class="shortened-link-section mt-4">
-          <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-3">
+          <!-- <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-3">
             <p class="original-link">https://www.frontendmentor.io</p>
             <div class="line-separator mx-3"></div>
             <div class="shortened-link d-flex align-items-center">
               <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
               <button class="btn btn-singUp btn-copy rounded py-2 px-4">Copy</button>
             </div>
-          </div>
-          <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-3">
-            <p class="original-link">https://www.frontendmentor.io</p>
-            <div class="line-separator mx-3"></div>
-            <div class="shortened-link d-flex align-items-center">
-              <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
-              <button class="btn btn-singUp btn-copy rounded py-2 px-4">Copy</button>
-            </div>
-          </div>
-          <div class="shortened-link-output d-flex align-items-center justify-content-between py-3 px-4 mb-3">
-            <p class="original-link">https://www.frontendmentor.io</p>
-            <div class="line-separator mx-3"></div>
-            <div class="shortened-link d-flex align-items-center">
-              <p class="hortened-url me-3">httpss://rel.ink/k4IKyk</p>
-              <button class="btn btn-singUp btn-copy rounded py-2 px-4">Copy</button>
-            </div>
-          </div>
-
+          </div> -->
         </div>
       </div>
 
@@ -201,6 +188,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

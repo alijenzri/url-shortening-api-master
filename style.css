@@ -123,8 +123,17 @@ body {
     width: 100%
 }
 
+.btn-copy-copied {
+    background-color: var(--Dark-Violet) !important;
+}
+
 .hortened-url {
     color: var(--Cyan);
+}
+
+.invalid-feedback {
+    position: absolute;
+    margin-top: 3px;
 }
 
 /* | STATISTICS SECTION */
@@ -306,7 +315,7 @@ body {
     }
 
     .hortened-url {
-        margin-bottom: 15px !important;
+        margin-bottom: 20px !important;
     }
 
     .btn-copy {
@@ -361,6 +370,10 @@ body {
 
     .link-input-row.p {
         padding: 0 !important;
+    }
+
+    .btn-col {
+        margin-top: 20px;
     }
 
 }
